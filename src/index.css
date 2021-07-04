@@ -19,7 +19,6 @@ code {
 
 body {
   font-family: "Castoro", serif;
-  background-color: lavender;
 }
 
 img {
@@ -32,10 +31,17 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol {
+ul {
+  display: flex;
   padding: 0;
   margin: 0;
 
   list-style: none;
+}
+li {
+  margin: 0;
+  padding: 5px;
+}
+h1 {
+  font-size: 3em;
 }

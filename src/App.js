@@ -33,17 +33,15 @@ class App extends Component {
           option={Object.keys(this.state)}
           onLeaveFeedback={this.handleIncreament}
         />
-
+        <Section title="Statistics" />
         {this.countTotalFeedback() ? (
-          <Section title="Statistics">
-            <Statistics
-              good={good}
-              neutral={neutral}
-              bad={bad}
-              total={this.countTotalFeedback()}
-              positivePercentage={this.countpositivePercentage()}
-            />
-          </Section>
+          <Statistics
+            good={good}
+            neutral={neutral}
+            bad={bad}
+            total={this.countTotalFeedback()}
+            positivePercentage={this.countpositivePercentage()}
+          />
         ) : (
           <Notification message="No feedback given"></Notification>
         )}
